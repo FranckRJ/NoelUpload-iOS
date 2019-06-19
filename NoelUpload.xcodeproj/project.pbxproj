@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C36F498822BA695000BD1738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F498722BA695000BD1738 /* AppDelegate.swift */; };
+		C36F498A22BA695000BD1738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F498922BA695000BD1738 /* ViewController.swift */; };
+		C36F498D22BA695000BD1738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36F498B22BA695000BD1738 /* Main.storyboard */; };
+		C36F498F22BA695000BD1738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36F498E22BA695000BD1738 /* Assets.xcassets */; };
+		C36F499222BA695000BD1738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36F499022BA695000BD1738 /* LaunchScreen.storyboard */; };
+		C36F499D22BA695100BD1738 /* NoelUploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F499C22BA695100BD1738 /* NoelUploadTests.swift */; };
+		C36F49A822BA695100BD1738 /* NoelUploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F49A722BA695100BD1738 /* NoelUploadUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C36F499922BA695100BD1738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C36F497C22BA695000BD1738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C36F498322BA695000BD1738;
+			remoteInfo = NoelUpload;
+		};
+		C36F49A422BA695100BD1738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C36F497C22BA695000BD1738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C36F498322BA695000BD1738;
+			remoteInfo = NoelUpload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C36F498422BA695000BD1738 /* NoelUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoelUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36F498722BA695000BD1738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C36F498922BA695000BD1738 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C36F498C22BA695000BD1738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C36F498E22BA695000BD1738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C36F499122BA695000BD1738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C36F499322BA695000BD1738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36F499822BA695100BD1738 /* NoelUploadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoelUploadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36F499C22BA695100BD1738 /* NoelUploadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoelUploadTests.swift; sourceTree = "<group>"; };
+		C36F499E22BA695100BD1738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36F49A322BA695100BD1738 /* NoelUploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoelUploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36F49A722BA695100BD1738 /* NoelUploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoelUploadUITests.swift; sourceTree = "<group>"; };
+		C36F49A922BA695100BD1738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C36F498122BA695000BD1738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36F499522BA695100BD1738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36F49A022BA695100BD1738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C36F497B22BA695000BD1738 = {
+			isa = PBXGroup;
+			children = (
+				C36F498622BA695000BD1738 /* NoelUpload */,
+				C36F499B22BA695100BD1738 /* NoelUploadTests */,
+				C36F49A622BA695100BD1738 /* NoelUploadUITests */,
+				C36F498522BA695000BD1738 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C36F498522BA695000BD1738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C36F498422BA695000BD1738 /* NoelUpload.app */,
+				C36F499822BA695100BD1738 /* NoelUploadTests.xctest */,
+				C36F49A322BA695100BD1738 /* NoelUploadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C36F498622BA695000BD1738 /* NoelUpload */ = {
+			isa = PBXGroup;
+			children = (
+				C36F498722BA695000BD1738 /* AppDelegate.swift */,
+				C36F498922BA695000BD1738 /* ViewController.swift */,
+				C36F498B22BA695000BD1738 /* Main.storyboard */,
+				C36F498E22BA695000BD1738 /* Assets.xcassets */,
+				C36F499022BA695000BD1738 /* LaunchScreen.storyboard */,
+				C36F499322BA695000BD1738 /* Info.plist */,
+			);
+			path = NoelUpload;
+			sourceTree = "<group>";
+		};
+		C36F499B22BA695100BD1738 /* NoelUploadTests */ = {
+			isa = PBXGroup;
+			children = (
+				C36F499C22BA695100BD1738 /* NoelUploadTests.swift */,
+				C36F499E22BA695100BD1738 /* Info.plist */,
+			);
+			path = NoelUploadTests;
+			sourceTree = "<group>";
+		};
+		C36F49A622BA695100BD1738 /* NoelUploadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C36F49A722BA695100BD1738 /* NoelUploadUITests.swift */,
+				C36F49A922BA695100BD1738 /* Info.plist */,
+			);
+			path = NoelUploadUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C36F498322BA695000BD1738 /* NoelUpload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C36F49AC22BA695100BD1738 /* Build configuration list for PBXNativeTarget "NoelUpload" */;
+			buildPhases = (
+				C36F498022BA695000BD1738 /* Sources */,
+				C36F498122BA695000BD1738 /* Frameworks */,
+				C36F498222BA695000BD1738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoelUpload;
+			productName = NoelUpload;
+			productReference = C36F498422BA695000BD1738 /* NoelUpload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C36F499722BA695100BD1738 /* NoelUploadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C36F49AF22BA695100BD1738 /* Build configuration list for PBXNativeTarget "NoelUploadTests" */;
+			buildPhases = (
+				C36F499422BA695100BD1738 /* Sources */,
+				C36F499522BA695100BD1738 /* Frameworks */,
+				C36F499622BA695100BD1738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C36F499A22BA695100BD1738 /* PBXTargetDependency */,
+			);
+			name = NoelUploadTests;
+			productName = NoelUploadTests;
+			productReference = C36F499822BA695100BD1738 /* NoelUploadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C36F49A222BA695100BD1738 /* NoelUploadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C36F49B222BA695100BD1738 /* Build configuration list for PBXNativeTarget "NoelUploadUITests" */;
+			buildPhases = (
+				C36F499F22BA695100BD1738 /* Sources */,
+				C36F49A022BA695100BD1738 /* Frameworks */,
+				C36F49A122BA695100BD1738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C36F49A522BA695100BD1738 /* PBXTargetDependency */,
+			);
+			name = NoelUploadUITests;
+			productName = NoelUploadUITests;
+			productReference = C36F49A322BA695100BD1738 /* NoelUploadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C36F497C22BA695000BD1738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = FranckRJ;
+				TargetAttributes = {
+					C36F498322BA695000BD1738 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C36F499722BA695100BD1738 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C36F498322BA695000BD1738;
+					};
+					C36F49A222BA695100BD1738 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C36F498322BA695000BD1738;
+					};
+				};
+			};
+			buildConfigurationList = C36F497F22BA695000BD1738 /* Build configuration list for PBXProject "NoelUpload" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C36F497B22BA695000BD1738;
+			productRefGroup = C36F498522BA695000BD1738 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C36F498322BA695000BD1738 /* NoelUpload */,
+				C36F499722BA695100BD1738 /* NoelUploadTests */,
+				C36F49A222BA695100BD1738 /* NoelUploadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C36F498222BA695000BD1738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36F499222BA695000BD1738 /* LaunchScreen.storyboard in Resources */,
+				C36F498F22BA695000BD1738 /* Assets.xcassets in Resources */,
+				C36F498D22BA695000BD1738 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36F499622BA695100BD1738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36F49A122BA695100BD1738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C36F498022BA695000BD1738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36F498A22BA695000BD1738 /* ViewController.swift in Sources */,
+				C36F498822BA695000BD1738 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36F499422BA695100BD1738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36F499D22BA695100BD1738 /* NoelUploadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C36F499F22BA695100BD1738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C36F49A822BA695100BD1738 /* NoelUploadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C36F499A22BA695100BD1738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C36F498322BA695000BD1738 /* NoelUpload */;
+			targetProxy = C36F499922BA695100BD1738 /* PBXContainerItemProxy */;
+		};
+		C36F49A522BA695100BD1738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C36F498322BA695000BD1738 /* NoelUpload */;
+			targetProxy = C36F49A422BA695100BD1738 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C36F498B22BA695000BD1738 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C36F498C22BA695000BD1738 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C36F499022BA695000BD1738 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C36F499122BA695000BD1738 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C36F49AA22BA695100BD1738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C36F49AB22BA695100BD1738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C36F49AD22BA695100BD1738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoelUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franckrj.NoelUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C36F49AE22BA695100BD1738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoelUpload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franckrj.NoelUpload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C36F49B022BA695100BD1738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoelUploadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franckrj.NoelUploadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoelUpload.app/NoelUpload";
+			};
+			name = Debug;
+		};
+		C36F49B122BA695100BD1738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoelUploadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franckrj.NoelUploadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoelUpload.app/NoelUpload";
+			};
+			name = Release;
+		};
+		C36F49B322BA695100BD1738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoelUploadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franckrj.NoelUploadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoelUpload;
+			};
+			name = Debug;
+		};
+		C36F49B422BA695100BD1738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoelUploadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franckrj.NoelUploadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoelUpload;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C36F497F22BA695000BD1738 /* Build configuration list for PBXProject "NoelUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36F49AA22BA695100BD1738 /* Debug */,
+				C36F49AB22BA695100BD1738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36F49AC22BA695100BD1738 /* Build configuration list for PBXNativeTarget "NoelUpload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36F49AD22BA695100BD1738 /* Debug */,
+				C36F49AE22BA695100BD1738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36F49AF22BA695100BD1738 /* Build configuration list for PBXNativeTarget "NoelUploadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36F49B022BA695100BD1738 /* Debug */,
+				C36F49B122BA695100BD1738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36F49B222BA695100BD1738 /* Build configuration list for PBXNativeTarget "NoelUploadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36F49B322BA695100BD1738 /* Debug */,
+				C36F49B422BA695100BD1738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C36F497C22BA695000BD1738 /* Project object */;
+}
