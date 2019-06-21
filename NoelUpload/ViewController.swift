@@ -26,13 +26,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let task = URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
             guard let data = data, error == nil else {
                 DispatchQueue.main.async {
-                    self.labelForUploadInfo.text = "Erreur : " + (error?.localizedDescription ?? "Unknown error")
+                    self.labelForUploadInfo.text = "Erreur : " + (error?.localizedDescription ?? "Unknown error") + "."
                 }
                 return
             }
 
             DispatchQueue.main.async {
-                self.labelForUploadInfo.text = "Upload terminé, lien : " + String(data: data, encoding: .ascii)!
+                let pasteBoard = UIPasteboard.general
+                let link: String? = String(data: data, encoding: .ascii)
+
+                if (link != nil) {
+                    pasteBoard.string = link
+                    self.labelForUploadInfo.text = "Upload terminé, lien copié."
+                } else {
+                    self.labelForUploadInfo.text = "Erreur : lien invalide."
+                }
             }
         }
         task.resume()
