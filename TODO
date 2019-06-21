@@ -1,0 +1,4 @@
+Les trucs qu'il vaudrait mieux faire :
+- Convertir le lien en lien direct.
+- Progression de l'upload.
+- Mieux gérer cette histoire d'ImageRepresentation (UploadTask au lieu de DataTask ?).
