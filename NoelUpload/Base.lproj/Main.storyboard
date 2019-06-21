@@ -23,7 +23,7 @@
                                 <rect key="frame" x="10" y="30" width="355" height="627"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7lA-UC-dBK">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="280"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="270.5"/>
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="bxk-bl-kxM">
                                                 <rect key="frame" x="52.5" y="0.0" width="250" height="250"/>
@@ -36,14 +36,16 @@
                                                     <outletCollection property="gestureRecognizers" destination="xrY-nX-kUw" appends="YES" id="NtQ-VE-bNY"/>
                                                 </connections>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqb-UZ-wqw">
-                                                <rect key="frame" x="152.5" y="250" width="50" height="30"/>
-                                                <state key="normal" title="Upload"/>
-                                                <connections>
-                                                    <action selector="uploadButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFD-57-1W1"/>
-                                                </connections>
-                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En attente." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX0-uf-wcB">
+                                                <rect key="frame" x="0.0" y="250" width="355" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vX0-uf-wcB" firstAttribute="leading" secondItem="7lA-UC-dBK" secondAttribute="leading" id="D7h-nm-Rb2"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,7 +66,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageToUpload" destination="bxk-bl-kxM" id="t0P-M2-3kq"/>
+                        <outlet property="imageViewOfImageToUpload" destination="bxk-bl-kxM" id="t0P-M2-3kq"/>
+                        <outlet property="labelForUploadInfo" destination="vX0-uf-wcB" id="vp8-cB-GQB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

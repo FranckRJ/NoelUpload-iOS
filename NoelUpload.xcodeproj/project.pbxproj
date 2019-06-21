@@ -14,6 +14,7 @@
 		C36F499222BA695000BD1738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36F499022BA695000BD1738 /* LaunchScreen.storyboard */; };
 		C36F499D22BA695100BD1738 /* NoelUploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F499C22BA695100BD1738 /* NoelUploadTests.swift */; };
 		C36F49A822BA695100BD1738 /* NoelUploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F49A722BA695100BD1738 /* NoelUploadUITests.swift */; };
+		C3CAEBB622BB87F000914E1A /* ImageUploadRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAEBB522BB87F000914E1A /* ImageUploadRequestBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C36F49A322BA695100BD1738 /* NoelUploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoelUploadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36F49A722BA695100BD1738 /* NoelUploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoelUploadUITests.swift; sourceTree = "<group>"; };
 		C36F49A922BA695100BD1738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CAEBB522BB87F000914E1A /* ImageUploadRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadRequestBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				C36F498722BA695000BD1738 /* AppDelegate.swift */,
 				C36F498922BA695000BD1738 /* ViewController.swift */,
+				C3CAEBB522BB87F000914E1A /* ImageUploadRequestBuilder.swift */,
 				C36F498B22BA695000BD1738 /* Main.storyboard */,
 				C36F498E22BA695000BD1738 /* Assets.xcassets */,
 				C36F499022BA695000BD1738 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				C36F498A22BA695000BD1738 /* ViewController.swift in Sources */,
 				C36F498822BA695000BD1738 /* AppDelegate.swift in Sources */,
+				C3CAEBB622BB87F000914E1A /* ImageUploadRequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
