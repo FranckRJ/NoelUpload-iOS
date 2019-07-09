@@ -25,7 +25,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             return link
         }
 
-        if (link.starts(with: "fichiers/") || link.starts(with: "fichiers-xs/") || link.starts(with: "minis/")) {
+        if link.starts(with: "fichiers/") || link.starts(with: "fichiers-xs/") || link.starts(with: "minis/") {
             link = String(link[link.index(after: link.index(of: "/")!)...])
         } else {
             link = replaceFirstsOccurences(inStr: link, ofStr: "-", byStr: "/", nbOfOcc: 2)
@@ -37,8 +37,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
             if let firstDashRange = checkForNewStringType.range(of: "-") {
                 checkForNewStringType = String(checkForNewStringType[..<firstDashRange.lowerBound])
-                
-                if (checkForNewStringType.range(of: "[0-9]{1,8}", options: .regularExpression) != nil) {
+
+                if checkForNewStringType.range(of: "[0-9]{1,8}", options: .regularExpression) != nil {
                     link = replaceFirstsOccurences(inStr: link, ofStr: "-", byStr: "/", nbOfOcc: 1)
                 }
             }
@@ -70,7 +70,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 let pasteBoard = UIPasteboard.general
                 let link: String? = String(data: data, encoding: .ascii)
 
-                if (link != nil) {
+                if link != nil {
                     pasteBoard.string = self.noelshackLinkToDirectLink(link!)
                     self.labelForUploadInfo.text = "Upload terminé, lien copié."
                 } else {
