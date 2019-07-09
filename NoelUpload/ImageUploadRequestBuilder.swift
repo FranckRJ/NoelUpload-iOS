@@ -1,11 +1,3 @@
-//
-//  ImageUploader.swift
-//  NoelUpload
-//
-//  Created by Franck WERNER on 6/20/19.
-//  Copyright © 2019 FranckRJ. All rights reserved.
-//
-
 import UIKit
 import MobileCoreServices
 

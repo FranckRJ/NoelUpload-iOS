@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  NoelUpload
-//
-//  Created by Franck WERNER on 6/19/19.
-//  Copyright © 2019 FranckRJ. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
