@@ -4,6 +4,49 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imageViewOfImageToUpload: UIImageView!
     @IBOutlet weak var labelForUploadInfo: UILabel!
 
+    private func replaceFirstsOccurences(inStr: String, ofStr: String, byStr: String, nbOfOcc: Int) -> String {
+        var str = inStr
+        var currOcc = 0
+
+        while currOcc < nbOfOcc, let range = str.range(of: ofStr) {
+            str = str.replacingCharacters(in: range, with: byStr)
+            currOcc += 1
+        }
+
+        return str
+    }
+
+    private func noelshackLinkToDirectLink(_ baseLink: String) -> String {
+        var link = baseLink
+
+        if let noelshackWordRange = link.range(of: "noelshack.com/") {
+            link = String(link[noelshackWordRange.upperBound...])
+        } else {
+            return link
+        }
+
+        if (link.starts(with: "fichiers/") || link.starts(with: "fichiers-xs/") || link.starts(with: "minis/")) {
+            link = String(link[link.index(after: link.index(of: "/")!)...])
+        } else {
+            link = replaceFirstsOccurences(inStr: link, ofStr: "-", byStr: "/", nbOfOcc: 2)
+        }
+
+        /* Moyen dégueulasse pour checker si le lien utilise le nouveau format (deux nombres entre l'année et le timestamp au lieu d'un). */
+        if let lastSlashRange = link.range(of: "/", options: .backwards) {
+            var checkForNewStringType = String(link[link.index(after: lastSlashRange.lowerBound)...])
+
+            if let firstDashRange = checkForNewStringType.range(of: "-") {
+                checkForNewStringType = String(checkForNewStringType[..<firstDashRange.lowerBound])
+                
+                if (checkForNewStringType.range(of: "[0-9]{1,8}", options: .regularExpression) != nil) {
+                    link = replaceFirstsOccurences(inStr: link, ofStr: "-", byStr: "/", nbOfOcc: 1)
+                }
+            }
+        }
+
+        return "http://image.noelshack.com/fichiers/" + link
+    }
+
     private func startUploadOfThisImage(_ imageToUpload: UIImage) {
         let request: URLRequest
 
@@ -28,7 +71,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 let link: String? = String(data: data, encoding: .ascii)
 
                 if (link != nil) {
-                    pasteBoard.string = link
+                    pasteBoard.string = self.noelshackLinkToDirectLink(link!)
                     self.labelForUploadInfo.text = "Upload terminé, lien copié."
                 } else {
                     self.labelForUploadInfo.text = "Erreur : lien invalide."
