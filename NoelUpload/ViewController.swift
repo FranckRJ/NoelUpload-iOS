@@ -70,11 +70,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 let pasteBoard = UIPasteboard.general
                 let link: String? = String(data: data, encoding: .ascii)
 
-                if link != nil {
-                    pasteBoard.string = self.noelshackLinkToDirectLink(link!)
+                if let link = link, link.starts(with: "http://") || link.starts(with: "https://") {
+                    pasteBoard.string = self.noelshackLinkToDirectLink(link)
                     self.labelForUploadInfo.text = "Upload terminé, lien copié."
                 } else {
-                    self.labelForUploadInfo.text = "Erreur : lien invalide."
+                    self.labelForUploadInfo.text = "Erreur : " + (link ?? "lien invalide.")
                 }
             }
         }
