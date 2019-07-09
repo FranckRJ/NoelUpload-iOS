@@ -17,14 +17,14 @@ class ImageUploadRequestBuilder {
 
         request.httpMethod = "POST"
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try createBody(UIImagePNGRepresentation(imageToUpload)!, boundary)
+        request.httpBody = try createBody(UIImageJPEGRepresentation(imageToUpload, 1.0)!, boundary)
 
         return request
     }
 
     static private func createBody(_ imageRepresentation: Data, _ boundary: String) throws -> Data {
         var body = Data()
-        let mimetype = "image/*"
+        let mimetype = "image/jpeg"
 
         body.append("--\(boundary)\r\n")
         body.append("Content-Disposition: form-data; name=\"fichier\"; filename=\"fichier.jpg\"\r\n")
