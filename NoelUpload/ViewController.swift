@@ -102,16 +102,4 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
-
-    @IBAction func uploadButtonTapped(_ sender: UIButton) {
-        let durationInSec: Double = 5
-        let message = "Upload en cours... (dans le futur)"
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-
-        present(alert, animated: true)
-
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + durationInSec) {
-            alert.dismiss(animated: true, completion: nil)
-        }
-    }
 }
